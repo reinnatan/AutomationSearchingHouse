@@ -1,0 +1,60 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+test {
+    useJUnitPlatform()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    implementation 'org.springframework:spring-core:5.3.22'
+
+    // https://mvnrepository.com/artifact/io.cucumber/cucumber-java
+    implementation 'io.cucumber:cucumber-java:7.7.0'
+
+    // https://mvnrepository.com/artifact/io.cucumber/cucumber-junit
+    testImplementation 'io.cucumber:cucumber-junit:7.7.0'
+
+
+    // https://mvnrepository.com/artifact/io.appium/java-client
+    implementation 'io.appium:java-client:8.2.0'
+
+    // https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager
+    implementation 'io.github.bonigarcia:webdrivermanager:5.3.0'
+
+
+    // https://mvnrepository.com/artifact/org.springframework/spring-core
+    implementation 'org.springframework:spring-core:5.3.22'
+
+    // https://mvnrepository.com/artifact/org.springframework/spring-context
+    implementation 'org.springframework:spring-context:5.3.22'
+
+    // https://mvnrepository.com/artifact/org.springframework/spring-test
+    testImplementation 'org.springframework:spring-test:5.3.22'
+
+    // https://mvnrepository.com/artifact/io.qameta.allure/allure-cucumber-jvm
+    implementation 'io.qameta.allure:allure-cucumber-jvm:2.19.0'
+
+    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver
+    implementation 'org.seleniumhq.selenium:selenium-chrome-driver:2.23.0'
+
+    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-firefox-driver
+    implementation 'org.seleniumhq.selenium:selenium-firefox-driver:4.4.0'
+
+    // https://mvnrepository.com/artifact/io.netty/netty-handler
+    implementation 'io.netty:netty-handler:4.1.81.Final'
+
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.1.1'
+
+    // https://mvnrepository.com/artifact/mysql/mysql-connector-java
+    implementation 'mysql:mysql-connector-java:8.0.30'
+}
