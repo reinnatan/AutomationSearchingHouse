@@ -1,37 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="7.492">
-    <testcase classname="Search house in jakarta" name="Search house on tebet location" time="7.405">
-        <failure message="Element &lt;div&gt; could not be scrolled into view&#10;Build info: version: '4.4.0', revision: 'e5c75ed026a'&#10;System info: host: 'Reinharts-MBP', ip: 'fe80:0:0:0:cee:e1ef:91d7:9403%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.4', java.version: '18.0.1.1'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [25f39be0-124e-4134-a00b-40947b46fa12, clickElement {id=a336ff6e-e2e7-4c82-a371-01b532c94513}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 104.0.1, moz:accessibilityChecks: false, moz:buildID: 20220829141339, moz:debuggerAddress: localhost:49789, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 21.5.0, moz:processID: 23994, moz:profile: /var/folders/fn/8kvt1q8n25l..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:49789/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Element: [[FirefoxDriver: firefox on MAC (25f39be0-124e-4134-a00b-40947b46fa12)] -&gt; xpath: /html/body/div[1]/div/div/div[1]/div/div[2]/div[1]/div/div[1]]&#10;Session ID: 25f39be0-124e-4134-a00b-40947b46fa12" type="org.openqa.selenium.ElementNotInteractableException"><![CDATA[Given browse to rumah123 website............................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="10.955">
+    <testcase classname="Search house in jakarta" name="Search house on tebet location" time="10.871">
+        <system-out><![CDATA[Given browse to rumah123 website............................................passed
 And search rumah location "Tebet"...........................................passed
-And click button filter.....................................................failed
-And click filter house......................................................skipped
-And click filter three bedrooms.............................................skipped
-Then click apply filter.....................................................skipped
-When check the result less than 1000........................................skipped
-
-StackTrace:
-org.openqa.selenium.ElementNotInteractableException: Element <div> could not be scrolled into view
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'Reinharts-MBP', ip: 'fe80:0:0:0:cee:e1ef:91d7:9403%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.4', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [25f39be0-124e-4134-a00b-40947b46fa12, clickElement {id=a336ff6e-e2e7-4c82-a371-01b532c94513}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 104.0.1, moz:accessibilityChecks: false, moz:buildID: 20220829141339, moz:debuggerAddress: localhost:49789, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 21.5.0, moz:processID: 23994, moz:profile: /var/folders/fn/8kvt1q8n25l..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:49789/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Element: [[FirefoxDriver: firefox on MAC (25f39be0-124e-4134-a00b-40947b46fa12)] -> xpath: /html/body/div[1]/div/div/div[1]/div/div[2]/div[1]/div/div[1]]
-Session ID: 25f39be0-124e-4134-a00b-40947b46fa12
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at apps.testing.home.definitions.BrowsingFindHouse.clickFilterButton(BrowsingFindHouse.java:56)
-	at ✽.click button filter(file:///Users/reinhart/Downloads/TestingGradle/src/test/java/apps/testing/home/features/BrowseFindHouse.feature:9)
-]]></failure>
+And click button filter.....................................................passed
+And click filter house......................................................passed
+And click filter three bedrooms.............................................passed
+Then click apply filter.....................................................passed
+When check the result less than 1000........................................passed
+]]></system-out>
     </testcase>
 </testsuite>

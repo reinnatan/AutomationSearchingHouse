@@ -53,7 +53,7 @@ public class BrowsingFindHouse {
 
     @And("click button filter")
     public void clickFilterButton() throws InterruptedException {
-        driver.findElement(By.xpath("/html/body/div[1]/div/div/div[1]/div/div[2]/div[1]/div/div[1]")).click();
+        //driver.findElement(By.xpath("/html/body/div[1]/div/div/div[1]/div/div[2]/div[1]/div/div[1]")).click();
         //wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("i[@class='rui-icon ui-atomic-icon rui-icon-filters-small']/following-sibling::text()"))).click();
         //wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/div/div[1]/div/div[2]/div[1]/div/div[1]/span"))).click();
         //wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@class='ui-atomic-text ui-atomic-text--styling-caption ui-atomic-text--typeface-primary' and text()='Apartemen']"))).click();
@@ -94,7 +94,7 @@ public class BrowsingFindHouse {
 
     @After
     public void dispatchConfig(){
-        //driver.quit();
+        driver.quit();
     }
 }
 
