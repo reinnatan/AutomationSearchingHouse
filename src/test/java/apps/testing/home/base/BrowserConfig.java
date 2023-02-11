@@ -28,9 +28,11 @@ public class BrowserConfig {
         geoDisabled.setPreference("geo.provider.use_corelocation", false);
         geoDisabled.setPreference("geo.prompt.testing", false);
         geoDisabled.setPreference("geo.prompt.testing.allow", false);
-        DesiredCapabilities capabilities = new DesiredCapabilities();
         geoDisabled.setPreference("permissions.default.desktop-notification", 1);
-        capabilities.setCapability(FirefoxDriver.Capability.PROFILE,geoDisabled);
+
+        //DesiredCapabilities capabilities = new DesiredCapabilities();
+
+        //capabilities.setCapability(FirefoxDriver.Capability.PROFILE,geoDisabled);
         //new FirefoxDriver()
          WebDriverManager.firefoxdriver().setup();//capabilities(capabilities);
 
@@ -39,6 +41,7 @@ public class BrowserConfig {
         options.addArguments("--disable-notifications");
         options.addPreference("dom.webnotifications.enabled", false);
         options.addPreference("dom.push.enabled", false);
+        options.addPreference("permissions.default.desktop-notification", 1);
 
 
         return new FirefoxDriver(options);
