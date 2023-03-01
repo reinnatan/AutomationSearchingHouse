@@ -40,12 +40,7 @@ public class BrowsingFindHouse {
 
     @And("search rumah location {string}")
     public void browseLocationHouseByKey(String location) throws InterruptedException {
-        //String xpathSingapore = "/html/body/div/div/div/div[2]/div/div/div/div/div[2]/div/div[2]/a/div/div/div[2]/span";
         By xpathSearchKey = By.xpath("//ul[@class='flex flex-wrap']/li/input");
-
-        //driver.findElement(xpathSearchKey).sendKeys(location);
-        //Thread.sleep(3000);
-        //driver.findElement(xpathSearchKey).sendKeys(Keys.ENTER);
         wait.until(ExpectedConditions.visibilityOfElementLocated(xpathSearchKey)).sendKeys(location);
         wait.until(ExpectedConditions.visibilityOfElementLocated(xpathSearchKey)).sendKeys(Keys.ENTER);
         //Thread.sleep(5000);
@@ -53,17 +48,10 @@ public class BrowsingFindHouse {
 
     @And("click button filter")
     public void clickFilterButton() throws InterruptedException {
-
-        //wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"99-root-app\"]/div/div[1]/div/div[2]/div[1]/div/div[1]/span"))).click();
-        //wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//img[@title='Rumah']"))).click();
-        //wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(@text,'Tampilkan')]"))).click();
-        //driver.findElement(By.xpath("/html/body/div[1]/div/div/div[1]/div/div[2]/div[1]/div/div[1]")).click();
-        //wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("i[@class='rui-icon ui-atomic-icon rui-icon-filters-small']/following-sibling::text()"))).click();
-        //wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/div/div[1]/div/div[2]/div[1]/div/div[1]/span"))).click();
-        //wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@class='ui-atomic-text ui-atomic-text--styling-caption ui-atomic-text--typeface-primary' and text()='Apartemen']"))).click();
-        //wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/div/div[2]/div/div[1]/div[2]/div[1]/div/div[1]"))).click();
-        //wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@tabindex='0']"))).click();
-        //driver.findElement(By.xpath("//div[@tabindex='0']")).click();
+        //By xpathFilter = By.xpath("//span[text()='&nbsp;<!-- -->Filter']");
+        //wait.until(ExpectedConditions.visibilityOfElementLocated(xpathFilter)).click();
+        //By xpathFilterHouse = By.xpath("//span[@title='Rumah']");
+        //wait.until(ExpectedConditions.visibilityOfElementLocated(xpathFilterHouse)).click();
         //Thread.sleep(3000);
     }
 
@@ -98,7 +86,7 @@ public class BrowsingFindHouse {
 
     @After
     public void dispatchConfig(){
-        driver.quit();
+        //driver.quit();
     }
 }
 
