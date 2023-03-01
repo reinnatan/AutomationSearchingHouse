@@ -34,7 +34,7 @@ public class BrowserConfig {
 
         //capabilities.setCapability(FirefoxDriver.Capability.PROFILE,geoDisabled);
         //new FirefoxDriver()
-         WebDriverManager.firefoxdriver().setup();//capabilities(capabilities);
+         WebDriverManager.chromedriver().setup();//capabilities(capabilities);
 
 
         FirefoxOptions options = new FirefoxOptions();
@@ -43,8 +43,9 @@ public class BrowserConfig {
         options.addPreference("dom.push.enabled", false);
         options.addPreference("permissions.default.desktop-notification", 1);
 
+        WebDriver driver = new ChromeDriver();
 
-        return new FirefoxDriver(options);
+        return driver;
     }
 
 }

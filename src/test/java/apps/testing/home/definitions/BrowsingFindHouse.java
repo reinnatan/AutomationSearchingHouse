@@ -54,9 +54,9 @@ public class BrowsingFindHouse {
     @And("click button filter")
     public void clickFilterButton() throws InterruptedException {
 
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"99-root-app\"]/div/div[1]/div/div[2]/div[1]/div/div[1]/span"))).click();
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//img[@title='Rumah']"))).click();
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(@text,'Tampilkan')]"))).click();
+        //wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"99-root-app\"]/div/div[1]/div/div[2]/div[1]/div/div[1]/span"))).click();
+        //wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//img[@title='Rumah']"))).click();
+        //wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(@text,'Tampilkan')]"))).click();
         //driver.findElement(By.xpath("/html/body/div[1]/div/div/div[1]/div/div[2]/div[1]/div/div[1]")).click();
         //wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("i[@class='rui-icon ui-atomic-icon rui-icon-filters-small']/following-sibling::text()"))).click();
         //wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/div/div[1]/div/div[2]/div[1]/div/div[1]/span"))).click();
