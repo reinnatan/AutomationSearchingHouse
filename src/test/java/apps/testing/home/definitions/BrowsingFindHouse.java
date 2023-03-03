@@ -44,6 +44,8 @@ public class BrowsingFindHouse {
         wait.until(ExpectedConditions.visibilityOfElementLocated(xpathSearchKey)).sendKeys(location);
         wait.until(ExpectedConditions.visibilityOfElementLocated(xpathSearchKey)).sendKeys(Keys.ENTER);
         //Thread.sleep(5000);
+
+
     }
 
     @And("click button filter")
